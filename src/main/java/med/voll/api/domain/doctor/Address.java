@@ -1,10 +1,10 @@
-package med.voll.api.doctor;
+package med.voll.api.domain.doctor;
 
 import jakarta.persistence.Embeddable;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import med.voll.api.address.AddressDTO;
+import med.voll.api.domain.address.AddressDTO;
 
 @Embeddable
 @Getter
