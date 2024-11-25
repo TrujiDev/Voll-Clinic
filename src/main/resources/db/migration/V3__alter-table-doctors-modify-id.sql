@@ -1,1 +1,0 @@
-alter table doctors modify column id bigint not null auto_increment;

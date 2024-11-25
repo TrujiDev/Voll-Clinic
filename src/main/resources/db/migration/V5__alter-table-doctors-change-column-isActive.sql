@@ -1,1 +1,0 @@
-alter table doctors change column isActive is_active tinyint;
