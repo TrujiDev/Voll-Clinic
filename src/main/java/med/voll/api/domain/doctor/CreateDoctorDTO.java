@@ -9,25 +9,25 @@ import med.voll.api.domain.address.AddressDTO;
 
 public record CreateDoctorDTO(
 
-    @NotBlank
+    @NotBlank(message = "{name.mandatory}")
     String name,
 
-    @NotBlank
-    @Email
+    @NotBlank(message = "{email.mandatory}")
+    @Email(message = "{email.required}")
     String email,
 
-    @NotBlank
-    @Pattern(regexp = "\\d{10}")
+    @NotBlank(message = "{phone.mandatory}")
+    @Pattern(regexp = "\\d{10}", message = "{phone.required}")
     String phone,
 
-    @NotBlank
-    @Pattern(regexp = "\\d{6,10}")
+    @NotBlank(message = "{document.mandatory}")
+    @Pattern(regexp = "\\d{6,10}", message = "{document.required}")
     String document,
 
-    @NotNull
+    @NotNull(message = "{specialty.mandatory}")
     Specialty specialty,
 
-    @NotNull
+    @NotNull(message = "{address.mandatory}")
     @Valid
     AddressDTO address
 
