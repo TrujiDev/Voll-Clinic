@@ -21,7 +21,10 @@ public class DoctorController {
   private DoctorRepository doctorRepository;
 
   @PostMapping
-  public ResponseEntity<ResponseDoctorDTO> registerDoctor(@RequestBody @Valid CreateDoctorDTO createDoctorDTO, UriComponentsBuilder uriComponentsBuilder) {
+  public ResponseEntity<ResponseDoctorDTO> registerDoctor(
+      @RequestBody @Valid CreateDoctorDTO createDoctorDTO,
+      UriComponentsBuilder uriComponentsBuilder
+  ) {
     Doctor doctor = doctorRepository.save(new Doctor(createDoctorDTO));
     ResponseDoctorDTO responseDoctorDTO = ResponseDoctorDTO.from(doctor);
     URI url = uriComponentsBuilder.path("/doctors/{id}").buildAndExpand(doctor.getId()).toUri();
