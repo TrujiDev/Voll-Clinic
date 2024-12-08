@@ -1,4 +1,4 @@
-# VollClinic - REST API for Clinic Management
+# VollClinic - REST API para Gestión de Clínicas
 
 VollClinic es una API RESTful diseñada para gestionar los datos de los médicos de una clínica. Permite registrar, actualizar, listar y eliminar médicos, además de gestionar sus especialidades y direcciones. Es un sistema escalable y fácil de usar que proporciona una solución completa para la gestión de información clínica.
 
