@@ -10,3 +10,7 @@ spring:
     properties:
       hibernate:
         format_sql: true
+
+api:
+  security:
+    secret: ${JWT_SECRET:6f5a3e77-80fa-4ff5-a85a-9bb1d97f1c1d}
