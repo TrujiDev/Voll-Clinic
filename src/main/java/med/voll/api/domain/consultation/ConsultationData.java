@@ -8,4 +8,7 @@ public record ConsultationData(
     Long patientId,
     LocalDateTime date
 ) {
+  public ConsultationData(Consultation consultation) {
+    this(consultation.getId(), consultation.getDoctor().getId(), consultation.getPatient().getId(), consultation.getDate());
+  }
 }
