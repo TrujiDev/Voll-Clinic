@@ -20,8 +20,8 @@ public class ConsultationController {
   @PostMapping
   @Transactional
   public ResponseEntity<ConsultationData> createReservation(@RequestBody @Valid ReservationData reservationData) {
-    inquiries.createConsultation(reservationData);
-    return ResponseEntity.ok(new ConsultationData(null, null, null, null));
+    var consultationDetails = inquiries.createConsultation(reservationData);
+    return ResponseEntity.ok(consultationDetails);
   }
 
   @DeleteMapping
