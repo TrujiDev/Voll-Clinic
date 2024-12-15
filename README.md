@@ -152,5 +152,4 @@ Este proyecto no habría sido posible sin el apoyo y los recursos proporcionados
 - Gracias a **Flyway** por hacer que la gestión de migraciones de bases de datos sea sencilla y eficiente.
 - Gracias a los cursos que tomé en la plataforma **Alura**, pude adquirir los conocimientos necesarios para desarrollar este proyecto de manera estructurada y eficiente.
 - Gracias al programa ONE, tuve la oportunidad de acceder a valiosos recursos y conocimientos sobre desarrollo de software.
-- Agradezco profundamente a **Diego Rojas** por su excelente instrucción durante el curso que me permitió llevar este proyecto a cabo. Su enfoque claro y práctico fue crucial para mi aprendizaje.
 - A todos los contribuidores de código abierto que hacen que proyectos como este sean posibles.
