@@ -1,16 +1,18 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/voll_med
-    username:
-    password:
+    url: ${DATABASE_URL}
+    username: ${DATABASE_USERNAME}
+    password: ${DATABASE_PASSWORD}
 
   jpa:
-    show-sql: true
+    hibernate:
+      ddl-auto: update
     properties:
       hibernate:
         format_sql: true
+        show_sql: true
 
 api:
   security:
-    secret: ${JWT_SECRET:6f5a3e77-80fa-4ff5-a85a-9bb1d97f1c1d}
+    secret: ${JWT_SECRET}
