@@ -1,1 +1,0 @@
-ALTER TABLE inquiries ADD COLUMN cancel_reason VARCHAR(255);
